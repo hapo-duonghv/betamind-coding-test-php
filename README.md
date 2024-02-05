@@ -40,12 +40,20 @@ The application should now be accessible at http://localhost:34251
 
 ### Authentication
 
-TODO: pls summarize how to check "Authentication" bahavior
-
+TODO:
+- I use cakephp/authentication plugin to implement authentication behavior
+- AuthenticationMiddleware will call a hook method on the application when it starts handling the request.
+- Authentication Component is combined with User Model to authenticate user.
 ### Article Management
 
-TODO: pls summarize how to check "Article Management" bahavior
+TODO: I made some article feature like below:
+- Every logged in User can get all articles
+- Only people creating article can edit their articles
 
 ### Like Feature
 
-TODO: pls summarize how to check "Like Feature" bahavior
+TODO:
+- Every logged in User can like article
+- People can not unlike article
+- I create an table called article_likes to store like actions of User, 1 Article can have many Likes.
+  I count article like number base on this table
